@@ -1,6 +1,8 @@
 ## freeCodeCamp → «Responsive Web Design» (Basic HTML)
 
-```File structure
+### HTML file structure
+
+```html
 <html>
   <body>
     <main>
