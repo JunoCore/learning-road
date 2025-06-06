@@ -1,5 +1,7 @@
 ## freeCodeCamp → «Responsive Web Design» (Basic HTML)
 
+*Learn HTML by Building a Cat Photo App* practice-project [1-71]
+
 ### HTML file structure
 
 ```html
