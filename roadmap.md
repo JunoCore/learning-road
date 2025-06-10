@@ -5,7 +5,7 @@
 ### 1. Responsive Web Design (freeCodeCamp 2022 curriculum)
 - [x] Cat Photo App — Basic HTML
 - [x] Café Menu — Basic CSS
-- [ ] Colored Markers — CSS Colors
+- [ ] Colored Markers — CSS Colors ![progress](https://img.shields.io/badge/Progress-12%25-brightgreen)
 - [ ] Registration Form — HTML Forms
 - [ ] **Build a Survey Form** (cert checkpoint)
 - [ ] Rothko Painting — CSS Box Model
@@ -26,7 +26,7 @@
 
 ### 2. JavaScript Algorithms & Data Structures (v8)
 - [x] Pyromid Generator — Introductory JS
-- [ ] Gradebook App — review JS fundamentals
+- [ ] Gradebook App — review JS fundamentals ![progress](https://img.shields.io/badge/Progress-0%25-brightgreen)
 - [ ] Role-Playing Game — Basic JS
 - [ ] Random Background Color Changer — Debugging
 - [ ] Calorie Counter — Form Validation
