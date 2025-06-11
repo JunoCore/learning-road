@@ -11,8 +11,6 @@ Link **styles.css** to the HTML page by nesting a `<link>` element within the `<
 <link rel="stylesheet" href="styles.css">
 ```
 
----
-
 ## Margin Shorthand
 
 Center an element by setting its margin to auto:
@@ -21,8 +19,6 @@ Center an element by setting its margin to auto:
   margin: 10px auto;
 }
 ```
-
----
 
 ## Multiple Classes
 
@@ -36,8 +32,6 @@ Example markers:
 <div class="marker two"></div>
 <div class="marker three"></div>
 ```
-
----
 
 ## Color Functions
 
@@ -59,8 +53,6 @@ Example markers:
   }
   ```
 
----
-
 ## Gradients
 
 Use `linear-gradient` to create color transitions:
@@ -72,8 +64,6 @@ background: linear-gradient(90deg, red 90%, black);
 - `direction`: e.g., `90deg`
 - Color-stops: e.g., `red 90%, black`
 
----
-
 ## Opacity
 
 Control transparency with `opacity`:
@@ -84,8 +74,6 @@ Or use alpha channel in RGBA:
 ```css
 background-color: rgba(255, 255, 255, 0.5);
 ```
-
----
 
 ## Borders
 
@@ -99,8 +87,6 @@ Shorthand:
 ```css
 border-left: 10px solid black;
 ```
-
----
 
 ## Box Shadow
 
