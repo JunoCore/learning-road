@@ -13,8 +13,6 @@
 <script src="./script.js"></script>
 ```
 
----
-
 ## Developer Console
 
 Open with:
@@ -23,8 +21,6 @@ Open with:
 - Or use the built-in Console button above the preview.
 
 Use it to view errors and inspect variables.
-
----
 
 ## HTML Interaction and DOM
 
@@ -43,8 +39,6 @@ Use it to view errors and inspect variables.
   display: none; /* hide element */
   cursor: pointer; /* pointer cursor */
   ```
-
----
 
 ## Button Clicks
 
@@ -66,13 +60,9 @@ Use it to view errors and inspect variables.
   const escapedString = "Naomi likes to play \"Zelda\" sometimes.";
   ```
 
----
-
 ## Functions and Repetition
 
 Repetition in code suggests creating functions to reuse logic.
-
----
 
 ## Objects
 
@@ -92,8 +82,6 @@ Repetition in code suggests creating functions to reuse logic.
   - Dot notation: `obj.name`
   - Bracket notation: `spaceObj["Space Name"]`
 
----
-
 ## Inline Styles via JS
 
 Change CSS inline styles:
@@ -101,8 +89,6 @@ Change CSS inline styles:
 const paragraph = document.querySelector('p');
 paragraph.style.display = 'block';
 ```
-
----
 
 ## Math Utilities
 
@@ -117,16 +103,12 @@ paragraph.style.display = 'block';
   monsterHealth -= weapons[currentWeaponIndex].power + Math.floor(Math.random() * xp) + 1;
   ```
 
----
-
 ## innerHTML
 
 Modify HTML content:
 ```js
 document.querySelector("#demo").innerHTML = "Hello, innerHTML!";
 ```
-
----
 
 ## Ternary Operator
 
@@ -145,8 +127,6 @@ if (score > 0) {
 return score > 0 ? score : default_score;
 ```
 
----
-
 ## Logical Operators
 
 - **OR (`||`)**: returns first truthy value or second if first is falsy.  
@@ -154,8 +134,6 @@ return score > 0 ? score : default_score;
   num < 10 || num > 20
   ```
 - **AND (`&&`)**: true if both operands truthy.
-
----
 
 ## Array includes()
 
