@@ -27,8 +27,8 @@
 ### 2. JavaScript Algorithms & Data Structures (v8)
 - [x] Pyromid Generator — Introductory JS
 - [x] Gradebook App — review JS fundamentals
-- [ ] Role-Playing Game — Basic JS ![progress](https://img.shields.io/badge/Progress-79%25-brightgreen)
-- [ ] Random Background Color Changer — Debugging
+- [x] Role-Playing Game — Basic JS
+- [ ] Random Background Color Changer — Debugging ![progress](https://img.shields.io/badge/Progress-0%25-brightgreen)
 - [ ] Calorie Counter — Form Validation
 - [ ] Rock, Paper, Scissors Game
 - [ ] Music Player — String & Array Methods
