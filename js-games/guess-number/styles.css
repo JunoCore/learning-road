@@ -1,0 +1,36 @@
+h1 {
+    text-align: center;
+}
+
+#Field {
+    width: 80%;
+    max-width: 500px;
+    /*max-height: 1000px;*/
+    background-color: gray;
+    margin:auto;
+}
+
+#genField {
+    width: 30%;
+    text-align: center;
+    background-color: red;
+    margin: auto;
+}
+
+#guessField {
+    width: 30%;
+    text-align: center;
+    background-color: green;
+    margin: auto;
+}
+
+#buttonField {
+    width: 30%;
+    text-align: center;
+    background-color: blue;
+    margin: auto;
+}
+
+#guessNumber {
+    width: 60%;
+}
