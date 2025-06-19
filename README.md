@@ -1,7 +1,3 @@
----
-title: Learning Road 🚀
----
-
 # Learning Road 🚀
 
 My journey from “tiny browser games” to Data / ML engineering.  
