@@ -1,36 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
 h1 {
-    text-align: center;
+    font-weight: normal;
+    margin: 0;
 }
 
-#Field {
-    width: 80%;
+button, input {
+    font-family: inherit;
+    font-weight: inherit;
+    
+}
+
+#window {
+    width: 60vh;
     max-width: 500px;
-    /*max-height: 1000px;*/
-    background-color: gray;
+    min-width: 320px;
+    height: 30vh;
+    max-height: 250px;
+    min-height: 170px;
+    background-color: lightgray;
     margin:auto;
+
+}
+
+#windowHead {
+    /*max-height: 1000px;*/
+    height: 20%;
+    text-align: center;
+    background-color: darkgrey;
+    margin-top: 10%;
+}
+
+#field {
+    display: flex;
+    gap: 8px;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height:80%;
+    margin: auto;
 }
 
 #genField {
-    width: 30%;
+    flex: 2;
+    height: 80%;
+    max-height: 200px;
+    font-size: 35pt;
     text-align: center;
-    background-color: red;
-    margin: auto;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#guessField {
-    width: 30%;
+#compareField {
+    flex: 1;
+    height: 80%;
+    max-height: 200px;
+    font-size: 45pt;
     text-align: center;
-    background-color: green;
-    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
 }
 
-#buttonField {
-    width: 30%;
+#guess {
+    flex: 1.5;
+    height: 80%;
+    max-height: 200px;
     text-align: center;
-    background-color: blue;
-    margin: auto;
-}
+    background-color: white;
+} 
 
 #guessNumber {
-    width: 60%;
+    height: 70%;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: white;
 }
+
+/* #buttonField {
+    width: 100%;
+    text-align: center;
+    background-color: blue;
+
+} */
+
+#guessNumber {
+    width: 100%;
+}
+
+.pixelify-sans {
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+
