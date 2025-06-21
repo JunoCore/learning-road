@@ -32,27 +32,34 @@ function checkGuess() {
     let yourGuess = guessNumber.value.trim();
     const yourGuessNum = parseInt(yourGuess, 10)
     // outNumbersText.innerText = yourGuessNum; 
-    outNumbers.push(yourGuessNum);
+    outNumbers.unshift(yourGuessNum);
     // outNumbersText.innerText = ;
     // outNumbers.unshift(1);
    if ((yourGuessNum <=100)&&(yourGuessNum>=0)){
         if (yourGuessNum == genNumber) {
             genNumberText.innerText = genNumber;
             compareText.innerText = "=";
-            outNumbersText.innerText = "WIN!!! WIN!!! WIN!!!";  
+            outText.innerText =  "/... " + "WIN!!! WIN!!! WIN!!!";  
             button1.innerText = "restart";  
             outNumbers = [];
             button1.onclick = start;
         } else if (yourGuessNum < genNumber) {
             compareText.innerText = ">";
             i++;
-            outNumbersText.innerText += " " + outNumbers[i-1] + ".."; 
-            // outNumbersText.innerText += " " + i + ".."; 
+            if ((i/5) > 1) {
+                i -=5 ;
+                outNumbersText.innerText = outNumbers[0];
+            } else outNumbersText.innerText += " " + outNumbers[0] + ".."; 
+            // outText.innerText += " " + i + ".."; 
         } else if (yourGuessNum > genNumber) {
             compareText.innerText = "<";
             i++;
-            outNumbersText.innerText += " " + outNumbers[i-1] + "..";  
-            // outNumbersText.innerText += " " + i + "..";
+            if ((i/5) > 1) {
+                i -=5 ;
+                outNumbersText.innerText = outNumbers[0];
+            } else outNumbersText.innerText += " " + outNumbers[0] + ".."; 
+            // outText.innerText += " " + outNumbers[0] + "..";  
+            // outText.innerText += " " + i + "..";
         }
    } else {
         genNumberText.innerText = "0...100";
