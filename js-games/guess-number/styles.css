@@ -97,6 +97,7 @@ body {
     text-align: center;
     background-color: white;
     min-width: 0;
+    
 }
 
 #button1Field {
@@ -116,10 +117,13 @@ body {
     text-align: center;
     box-sizing: border-box;
     border: none;
+    /* font-size: 1.3rem; */
+    caret-color: black;
 }
 
-#guessNumber:active { /* ??? */
-    border: none;
+#guessNumber:focus {
+  outline: none;
+  caret-color: grey;
 }
 
 #guessNumber::placeholder {
