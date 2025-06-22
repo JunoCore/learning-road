@@ -7,8 +7,9 @@ const genNumberText = document.querySelector("#genNumber");
 const compareText = document.querySelector("#compare");
 const guessNumber = document.querySelector("#guessNumber");
 const button1 = document.querySelector("#button1");
-const outText = document.querySelector("#outText");
-const outNumbersText = document.querySelector("#outNumbers");
+const outText = document.querySelector("#outNumbers1");
+// const outNumbersText1 = document.querySelector("#outNumbers1");
+const outNumbersText = document.querySelector("#outNumbers2");
 
 // button1.onclick = start;
 start();
@@ -19,8 +20,8 @@ start();
 function start() {   
     outText.innerText = "/... " + "your guesses" + "/...";
     genNumber = Math.floor(Math.random() * 100);
-    genNumberText.innerText = genNumber;
-    // genNumberText.innerText = "???";
+    // genNumberText.innerText = genNumber;
+    genNumberText.innerText = "make your guess";
     button1.innerText = "guess";
     i=0;
     button1.onclick = checkGuess;
@@ -33,13 +34,14 @@ function checkGuess() {
     const yourGuessNum = parseInt(yourGuess, 10)
     // outNumbersText.innerText = yourGuessNum; 
     outNumbers.unshift(yourGuessNum);
-    // outNumbersText.innerText = ;
+    genNumberText.innerText = "X";
     // outNumbers.unshift(1);
    if ((yourGuessNum <=100)&&(yourGuessNum>=0)){
         if (yourGuessNum == genNumber) {
             genNumberText.innerText = genNumber;
             compareText.innerText = "=";
             outText.innerText =  "/... " + "WIN!!! WIN!!! WIN!!!";  
+            outNumbersText.innerText = "";
             button1.innerText = "restart";  
             outNumbers = [];
             button1.onclick = start;
@@ -48,7 +50,7 @@ function checkGuess() {
             i++;
             if ((i/5) > 1) {
                 i -=5 ;
-                outNumbersText.innerText = outNumbers[0];
+                outNumbersText.innerText = outNumbers[0] + "..";
             } else outNumbersText.innerText += " " + outNumbers[0] + ".."; 
             // outText.innerText += " " + i + ".."; 
         } else if (yourGuessNum > genNumber) {
@@ -56,7 +58,7 @@ function checkGuess() {
             i++;
             if ((i/5) > 1) {
                 i -=5 ;
-                outNumbersText.innerText = outNumbers[0];
+                outNumbersText.innerText = outNumbers[0] + "..";
             } else outNumbersText.innerText += " " + outNumbers[0] + ".."; 
             // outText.innerText += " " + outNumbers[0] + "..";  
             // outText.innerText += " " + i + "..";
