@@ -1,7 +1,6 @@
 # 🚀 Mission Log
 
-_A daily chronicle of my caffeine-fueled skirmishes with code_
----
+_A daily chronicle of my caffeine-fueled skirmishes with code and the pursuit of new knowledge_
 
 ## Log Entries
 
