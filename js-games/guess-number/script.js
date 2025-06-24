@@ -5,6 +5,8 @@ import {
   addDoc,
   serverTimestamp
 } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
+import { getAuth, signInAnonymously }
+  from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
 
 const firebaseConfig = {
   apiKey: "AIzaSyA2gZiuyXas3t21kGGmm-a7WM9pzgrkZbc",
@@ -17,6 +19,9 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
+const auth = getAuth(app);
+
+await signInAnonymously(auth);
 
 async function saveScore(name, tries) {
     await addDoc(collection(db, "scores"), {
@@ -29,6 +34,7 @@ async function saveScore(name, tries) {
 let genNumber;
 let outNumbers = [];
 let i;
+let tryes;
 // let guessNumber;
 
 const genNumberText = document.querySelector("#genNumber");
@@ -52,6 +58,7 @@ function start() {
     genNumberText.innerText = "make your guess";
     button1.innerText = "guess";
     i=0;
+    tryes=0;
     button1.onclick = checkGuess;
     // checkGuess();
 }
@@ -68,8 +75,8 @@ function checkGuess() {
         if (yourGuessNum == genNumber) {
             genNumberText.innerText = genNumber;
             compareText.innerText = "=";
-            outText.innerText =  "/... " + "WIN!!! WIN!!! WIN!!!";  
-            saveScore("Anonymous", i);
+            outText.innerText =  "/... " + "WIN!!! WIN!!! WIN!!!" + " with " + tryes + " tryes";  
+            saveScore("Anonymous", tryes);
             outNumbersText.innerText = "";
             button1.innerText = "restart";  
             outNumbers = [];
@@ -77,6 +84,7 @@ function checkGuess() {
         } else if (yourGuessNum < genNumber) {
             compareText.innerText = ">";
             i++;
+            tryes++;
             if ((i/5) > 1) {
                 i -=5 ;
                 outNumbersText.innerText = outNumbers[0] + "..";
@@ -85,6 +93,7 @@ function checkGuess() {
         } else if (yourGuessNum > genNumber) {
             compareText.innerText = "<";
             i++;
+            tryes++;
             if ((i/5) > 1) {
                 i -=5 ;
                 outNumbersText.innerText = outNumbers[0] + "..";
