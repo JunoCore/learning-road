@@ -1,3 +1,31 @@
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+import {
+  getFirestore,
+  collection,
+  addDoc,
+  serverTimestamp
+} from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyA2gZiuyXas3t21kGGmm-a7WM9pzgrkZbc",
+  authDomain: "guess-number-web.firebaseapp.com",
+  projectId: "guess-number-web",
+  storageBucket: "guess-number-web.firebasestorage.app",
+  messagingSenderId: "241961043205",
+  appId: "1:241961043205:web:cb6cd84225357d0743a36c"
+};
+
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+
+async function saveScore(name, tries) {
+    await addDoc(collection(db, "scores"), {
+    player: name,
+    attempts: tries,
+    createdAt: serverTimestamp()  
+    });
+}
+
 let genNumber;
 let outNumbers = [];
 let i;
@@ -41,6 +69,7 @@ function checkGuess() {
             genNumberText.innerText = genNumber;
             compareText.innerText = "=";
             outText.innerText =  "/... " + "WIN!!! WIN!!! WIN!!!";  
+            saveScore("Anonymous", i);
             outNumbersText.innerText = "";
             button1.innerText = "restart";  
             outNumbers = [];
@@ -73,3 +102,4 @@ guessNumber.onfocus = function() {
   this.value = '';
   this.placeholder = '';
 }
+
