@@ -75,7 +75,7 @@ function checkGuess() {
         if (yourGuessNum == genNumber) {
             genNumberText.innerText = genNumber;
             compareText.innerText = "=";
-            outText.innerText =  "/... " + "WIN!!! WIN!!! WIN!!!" + " with " + tryes + " tryes";  
+            outText.innerText =  "/... " + "WIN!!! WIN!!! WIN!!!" + " in " + tryes + " tryes";  
             saveScore("Anonymous", tryes);
             outNumbersText.innerText = "";
             button1.innerText = "restart";  
