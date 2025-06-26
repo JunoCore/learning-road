@@ -34,8 +34,19 @@ async function saveScore(name, tries) {
 let genNumber;
 let outNumbers = [];
 let i;
-let tryes;
+let tries;
+let name;
 // let guessNumber;
+
+const guess = document.querySelector("#guess");
+const compareField = document.querySelector("#compareField");
+const outWindow = document.querySelector("#outWindow");
+
+const playerField = document.querySelector("#player");
+const juno = document.querySelector("#juno");
+const max = document.querySelector("#max");
+
+const genField = document.querySelector("#genField");
 
 const genNumberText = document.querySelector("#genNumber");
 const compareText = document.querySelector("#compare");
@@ -46,21 +57,49 @@ const outText = document.querySelector("#outNumbers1");
 const outNumbersText = document.querySelector("#outNumbers2");
 
 // button1.onclick = start;
-start();
+player();
+// start();
 // outNumbersText.innerText = "99";
 // checkGuess();
 // button1.onclick = checkGuess;
 
+function player() {
+  genField.style.display = "block";
+  playerField.style.display = "flex";
+  genNumberText.innerText = "choose your player";
+  guess.style.display = "none";
+  compareField.style.display = "none";
+  outWindow.style.display = "none";
+  juno.onclick = nameJuno;
+  max.onclick = nameMax;
+  // start();
+}
+
+function nameJuno() {
+  name = "Juno";
+  start();
+}
+
+function nameMax() {
+  name = "Maxwell";
+  start();
+}
+
 function start() {   
-    outText.innerText = "/... " + "your guesses" + "/...";
-    genNumber = Math.floor(Math.random() * 100);
-    // genNumberText.innerText = genNumber;
-    genNumberText.innerText = "make your guess";
-    button1.innerText = "guess";
-    i=0;
-    tryes=0;
-    button1.onclick = checkGuess;
-    // checkGuess();
+  playerField.style.display = "none";
+  guess.style.display = "block";
+  compareField.style.display = "flex";
+  outWindow.style.display = "flex";
+  genField.style.display = "flex";
+  outText.innerText = "/... " + "your guesses" + "/...";
+  genNumber = Math.floor(Math.random() * 100);
+  // genNumberText.innerText = genNumber;
+  genNumberText.innerText = "make your guess";
+  button1.innerText = "guess";
+  i=0;
+  tries=0;
+  button1.onclick = checkGuess;
+  // checkGuess();
 }
 
 function checkGuess() {
@@ -75,16 +114,16 @@ function checkGuess() {
         if (yourGuessNum == genNumber) {
             genNumberText.innerText = genNumber;
             compareText.innerText = "=";
-            outText.innerText =  "/... " + "WIN!!! WIN!!! WIN!!!" + " in " + tryes + " tryes";  
-            saveScore("Anonymous", tryes);
+            outText.innerText =  "/... " + "WIN!!! WIN!!! WIN!!!" + " in " + tries + " tries";  
+            saveScore(name, tries);
             outNumbersText.innerText = "";
             button1.innerText = "restart";  
             outNumbers = [];
-            button1.onclick = start;
+            button1.onclick = player;
         } else if (yourGuessNum < genNumber) {
             compareText.innerText = ">";
             i++;
-            tryes++;
+            tries++;
             if ((i/5) > 1) {
                 i -=5 ;
                 outNumbersText.innerText = outNumbers[0] + "..";
@@ -93,7 +132,7 @@ function checkGuess() {
         } else if (yourGuessNum > genNumber) {
             compareText.innerText = "<";
             i++;
-            tryes++;
+            tries++;
             if ((i/5) > 1) {
                 i -=5 ;
                 outNumbersText.innerText = outNumbers[0] + "..";
