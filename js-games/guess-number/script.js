@@ -21,7 +21,7 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 const auth = getAuth(app);
 
-await signInAnonymously(auth);
+// await signInAnonymously(auth);
 
 async function saveScore(name, tries) {
     await addDoc(collection(db, "scores"), {
@@ -85,7 +85,8 @@ function nameMax() {
   start();
 }
 
-function start() {   
+async function start() {   
+  await signInAnonymously(auth);
   playerField.style.display = "none";
   guess.style.display = "block";
   compareField.style.display = "flex";
