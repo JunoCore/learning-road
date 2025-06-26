@@ -66,7 +66,7 @@ player();
 function player() {
   genField.style.display = "block";
   playerField.style.display = "flex";
-  genNumberText.innerText = "choose your player";
+  genNumberText.innerText = "Choose your fighter";
   guess.style.display = "none";
   compareField.style.display = "none";
   outWindow.style.display = "none";
@@ -97,7 +97,7 @@ async function start() {
   outText.innerText = "/... " + "your guesses" + "/...";
   genNumber = Math.floor(Math.random() * 100);
   // genNumberText.innerText = genNumber;
-  genNumberText.innerText = "make your guess";
+  genNumberText.innerText = "Make your guess";
   button1.innerText = "guess";
   i=0;
   tries=1;
