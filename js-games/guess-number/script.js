@@ -89,6 +89,8 @@ async function start() {
   await signInAnonymously(auth);
   playerField.style.display = "none";
   guess.style.display = "block";
+  guessNumber.value = "";
+  guessNumber.placeholder = "your guess";
   compareField.style.display = "flex";
   outWindow.style.display = "flex";
   genField.style.display = "flex";
@@ -98,7 +100,7 @@ async function start() {
   genNumberText.innerText = "make your guess";
   button1.innerText = "guess";
   i=0;
-  tries=0;
+  tries=1;
   button1.onclick = checkGuess;
   // checkGuess();
 }
