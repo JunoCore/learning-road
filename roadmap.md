@@ -6,8 +6,8 @@
 - [x] Cat Photo App — Basic HTML
 - [x] Café Menu — Basic CSS
 - [x] Colored Markers — CSS Colors
-- [ ] Registration Form — HTML Forms ![progress](https://img.shields.io/badge/Progress-56%25-brightgreen)
-- [ ] **Build a Survey Form** (cert checkpoint)
+- [x] Registration Form — HTML Forms
+- [ ] **Build a Survey Form** (cert checkpoint) ![progress](https://img.shields.io/badge/Progress-0%25-brightgreen)
 - [ ] Rothko Painting — CSS Box Model
 - [ ] Flexbox Photo Gallery — Flexbox
 - [ ] Nutrition Label — Typography
