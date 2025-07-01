@@ -7,8 +7,8 @@
 - [x] Café Menu — Basic CSS
 - [x] Colored Markers — CSS Colors
 - [x] Registration Form — HTML Forms
-- [ ] **Build a Survey Form** (cert checkpoint) ![progress](https://img.shields.io/badge/Progress-0%25-brightgreen)
-- [ ] Rothko Painting — CSS Box Model
+- [x] **Build a Survey Form** (cert checkpoint)
+- [ ] Rothko Painting — CSS Box Model ![progress](https://img.shields.io/badge/Progress-0%25-brightgreen)
 - [ ] Flexbox Photo Gallery — Flexbox
 - [ ] Nutrition Label — Typography
 - [ ] Accessibility Quiz — Landmarks & ARIA
