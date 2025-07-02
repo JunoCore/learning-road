@@ -6,9 +6,9 @@
 - [x] Cat Photo App — Basic HTML
 - [x] Café Menu — Basic CSS
 - [x] Colored Markers — CSS Colors
-- [ ] Registration Form — HTML Forms ![progress](https://img.shields.io/badge/Progress-0%25-brightgreen)
-- [ ] **Build a Survey Form** (cert checkpoint)
-- [ ] Rothko Painting — CSS Box Model
+- [x] Registration Form — HTML Forms
+- [x] **Build a Survey Form** (cert checkpoint)
+- [ ] Rothko Painting — CSS Box Model ![progress](https://img.shields.io/badge/Progress-0%25-brightgreen)
 - [ ] Flexbox Photo Gallery — Flexbox
 - [ ] Nutrition Label — Typography
 - [ ] Accessibility Quiz — Landmarks & ARIA
@@ -28,8 +28,8 @@
 - [x] Pyromid Generator — Introductory JS
 - [x] Gradebook App — review JS fundamentals
 - [x] Role-Playing Game — Basic JS
-- [ ] Random Background Color Changer — Debugging ![progress](https://img.shields.io/badge/Progress-0%25-brightgreen)
-- [ ] Calorie Counter — Form Validation
+- [x] Random Background Color Changer — Debugging
+- [ ] Calorie Counter — Form Validation ![progress](https://img.shields.io/badge/Progress-10%25-brightgreen)
 - [ ] Rock, Paper, Scissors Game
 - [ ] Music Player — String & Array Methods
 - [ ] **Project: Palindrome Checker** (cert checkpoint)
@@ -52,8 +52,8 @@
 - [ ] **Project: Pokémon Search App** (final certification showcase)
 
 ### 3. Personal Mini-Projects
-- [ ] Build “Guess the Number” (HTML / CSS / JS)
-- [ ] Record scores to Firebase (Firestore)
+- [x] Build “Guess the Number” (HTML / CSS / JS)
+- [x] Record scores to Firebase (Firestore)
 - [ ] Export CSV + first Jupyter graph
 - [ ] Train first ML model (logistic regression)
 - [ ] Deploy FastAPI + Docker (public URL)
