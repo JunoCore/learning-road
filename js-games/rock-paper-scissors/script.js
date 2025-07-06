@@ -8,14 +8,16 @@ const bodyGame3 = document.querySelector("#body-game-3");
 const playerChoiceImg = document.querySelector("#body-game-1-img");
 const compChoiceImg = document.querySelector("#body-game-3-img");
 
-const playerScore = document.querySelector("#player-score");
-const compScore = document.querySelector("#comp-score");
+const playerScoreText = document.querySelector("#player-score");
+const compScoreText = document.querySelector("#comp-score");
 
 const playButton = document.querySelector("#button-play");
 
 let i;
 let playerChoice;
 let compChoice;
+let playerScore = 0;
+let compScore = 0;
 
 const pool = [
     { number: 0, name: "ROCK", address: "images/rock.png"},
@@ -58,9 +60,25 @@ function results() {
     compChoice = pool[Math.floor(Math.random() * 3)];
     compChoiceImg.src = compChoice["address"];
     // bodyGame2.innerText = playerChoice["address"];
+    condition(playerChoice["number"], compChoice["number"]);
+    playerScoreText.innerText = playerScore;
+    compScoreText.innerText = compScore;
 }
 
 
-function condition() {
+function condition(a, b) {
+    if (((a!=2)&&(b!=0))&&((a!=0)&&(b!=2))) {
+        if (a>b){
+            playerScore++;
+    } else if (a<b) {
+            compScore++;
+    } 
+    } else {
+        if (a<b){
+            playerScore++;
+    } else if (a>b) {
+            compScore++;
+    } 
+    }
 
 }

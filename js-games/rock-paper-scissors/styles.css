@@ -98,7 +98,7 @@ img {
 }
 
 #body-game-1, #body-game-3 {
-    flex: 1.6;
+    flex: 1.7;
     height: 100%;
     border: 3px solid #7D4AE3;
 }
@@ -107,21 +107,16 @@ img {
     flex: 1;
     height: 100%;
     border: 3px solid #7D4AE3;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 170%;
     /* display: flex;
     font-size: 180%;
     text-align: center;
     align-items: center;
     justify-content: center; */
 }
-
-/* #vs {
-    height: 100%;
-    display: flex;
-    font-size: 180%;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-} */
 
 /* #button-rock {
     background-image: url("images/rock.png");
