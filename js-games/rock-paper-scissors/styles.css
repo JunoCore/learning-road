@@ -12,7 +12,25 @@ button {
 }
 
 body {
-    background-image: url("images/bg.png");
+    min-height: 100%;
+    /* background-image: url("images/bg.png"); */
+    background-image:
+    repeating-linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.5) 0,
+      rgba(255, 255, 255, 0.5) 1.8px,
+      transparent 1px,
+      transparent 20px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.5) 0,
+      rgba(255, 255, 255, 0.5) 1.8px,
+      transparent 1px,
+      transparent 20px
+    ),
+    linear-gradient( to bottom, #ffbaee 0%, #bc98fd 100%);
+    background-attachment: fixed;
 }
 
 img {
@@ -101,6 +119,8 @@ img {
     flex: 1.7;
     height: 100%;
     border: 3px solid #7D4AE3;
+    text-align: center;
+    font-size: 120%;
 }
 
 #body-game-2 {
