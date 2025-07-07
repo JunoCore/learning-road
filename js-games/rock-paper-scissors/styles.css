@@ -158,49 +158,66 @@ img {
     margin: auto;
     margin-bottom: 2%;
     display: flex;
-    /* text-align: center; */
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
 }
 
 #body-interaction {
-    width: 35%;
+    width: 75%;
     height: 17%;
-    /* background-color: #FFB8D8; */
     margin: auto;
     box-sizing: border-box;
     display: flex;
+    gap: 7%;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
 }
 
 button {
     width: 100%;
     height: 100%;
-    /* font-size: 140%; */
     box-sizing: border-box;
     border: none;
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
 }
 
-#button-play {
+.buttons-res {
     display: flex;
     font-size: 140%;
     background-color: #FFB8D8; 
     border: 3px solid #7D4AE3;
-    /* outline: 3px solid #7D4AE3; */
     border-radius: 10px;
     align-items: center;
     justify-content: center;
 } 
 
-#button-play:hover {
+.buttons-res:hover {
   background-color: #7D4AE3;
   color: #FFB8D8;
 }
+
+#button-restart {
+    flex:1;
+}
+
+#button-reset {
+    flex:1.4;
+}
+
+/* #button-restart {
+    display: flex;
+    font-size: 140%;
+    background-color: #FFB8D8; 
+    border: 3px solid #7D4AE3;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}  */
+
+/* #button-restart:hover {
+  background-color: #7D4AE3;
+  color: #FFB8D8;
+} */
 
 .vt323-regular {
   font-family: "VT323", monospace;

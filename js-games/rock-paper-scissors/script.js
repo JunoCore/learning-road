@@ -11,7 +11,8 @@ const compChoiceImg = document.querySelector("#body-game-3-img");
 const playerScoreText = document.querySelector("#player-score");
 const compScoreText = document.querySelector("#comp-score");
 
-const playButton = document.querySelector("#button-play");
+const restartButton = document.querySelector("#button-restart");
+const resetButton = document.querySelector("#button-reset");
 
 let i;
 let playerChoice;
@@ -26,6 +27,25 @@ const pool = [
 ] 
 
 choice();
+rockButton.addEventListener('click', () => {
+    playerChoice = pool[0];
+    results();
+    });
+paperButton.addEventListener('click', () => {
+    playerChoice = pool[1];
+    results();
+    });
+scissorsButton.addEventListener('click', () => {
+    playerChoice = pool[2];
+    results();
+    });
+restartButton.addEventListener('click', choice);
+resetButton.addEventListener('click', () => {
+    playerScore = 0;
+    compScore = 0;
+    choice();
+    });
+
 
 function choice() {
     rockButton.style.display = "block";
@@ -34,19 +54,9 @@ function choice() {
     bodyGame1.style.display = "none";
     bodyGame2.style.display = "none";
     bodyGame3.style.display = "none";
-    rockButton.addEventListener('click', () => {
-        playerChoice = pool[0];
-        results();
-    });
-    paperButton.addEventListener('click', () => {
-        playerChoice = pool[1];
-        results();
-    });
-    scissorsButton.addEventListener('click', () => {
-        playerChoice = pool[2];
-        results();
-    });
-    
+    restartButton.style.display = "none";
+    playerScoreText.innerText = playerScore;
+    compScoreText.innerText = compScore;
 }
 
 function results() {
@@ -57,28 +67,28 @@ function results() {
     playerChoiceImg.src = playerChoice["address"];
     bodyGame2.style.display = "block";
     bodyGame3.style.display = "block";
+    restartButton.style.display = "block";
     compChoice = pool[Math.floor(Math.random() * 3)];
     compChoiceImg.src = compChoice["address"];
-    // bodyGame2.innerText = playerChoice["address"];
-    condition(playerChoice["number"], compChoice["number"]);
+    winCondition(playerChoice["number"], compChoice["number"]);
     playerScoreText.innerText = playerScore;
     compScoreText.innerText = compScore;
 }
 
-
-function condition(a, b) {
-    if (((a!=2)&&(b!=0))&&((a!=0)&&(b!=2))) {
-        if (a>b){
-            playerScore++;
-    } else if (a<b) {
-            compScore++;
-    } 
-    } else {
-        if (a<b){
-            playerScore++;
-    } else if (a>b) {
-            compScore++;
-    } 
-    }
-
+function winCondition(a, b) {
+    // if (((a!=2)&&(b!=0))&&((a!=0)&&(b!=2))) {
+    //     if (a>b){
+    //         playerScore++;
+    // } else if (a<b) {
+    //         compScore++;
+    // } 
+    // } 
+    // else {
+    //     if (a<b){
+    //         playerScore++;
+    // } else if (a>b) {
+    //         compScore++;
+    // } 
+    // }
 }
+
