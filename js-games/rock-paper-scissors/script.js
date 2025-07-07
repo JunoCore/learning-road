@@ -14,7 +14,6 @@ const compScoreText = document.querySelector("#comp-score");
 const restartButton = document.querySelector("#button-restart");
 const resetButton = document.querySelector("#button-reset");
 
-let i;
 let playerChoice;
 let compChoice;
 let playerScore = 0;
@@ -76,19 +75,9 @@ function results() {
 }
 
 function winCondition(a, b) {
-    // if (((a!=2)&&(b!=0))&&((a!=0)&&(b!=2))) {
-    //     if (a>b){
-    //         playerScore++;
-    // } else if (a<b) {
-    //         compScore++;
-    // } 
-    // } 
-    // else {
-    //     if (a<b){
-    //         playerScore++;
-    // } else if (a>b) {
-    //         compScore++;
-    // } 
-    // }
+    if ((a==0)&&(b==2)) { playerScore++; }
+    else if ((a==2)&&(b==0)) { compScore++; }
+    else if (a>b) { playerScore++; }
+    else if (a<b) { compScore++; }
 }
 
