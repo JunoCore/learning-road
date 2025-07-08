@@ -13,7 +13,6 @@ button {
 
 body {
     min-height: 100%;
-    /* background-image: url("images/bg.png"); */
     background-image:
     repeating-linear-gradient(
       to right,
@@ -36,19 +35,12 @@ body {
 img {
     width: 100%;
     height: auto;
-    /* object-fit: contain; */
-    object-fit: cover;
-
-    margin: auto;
 }
 
 #container {
     width: 50vw;
     max-width: 400px;
     min-width: 320px;
-    /* height: 35vh; */
-    /* max-height: 280px; */
-    /* min-height: 220px; */
     aspect-ratio: 10 / 7;
     margin: auto;
     background-color: #FADCF8;
@@ -76,35 +68,16 @@ img {
     justify-content: space-between;
     align-items: center;
     width: 85%;
-    height: 60%;
+    height: 63%;
     margin: auto;
     padding-top: 3%;
     padding-bottom: 3%;
     box-sizing: border-box;
-    /* padding-bottom: 5%; */
 }
-
-/* #rock, #paper, #scissors {
-    flex: 1;
-    height: 100%;
-    background-color: #E4CCFF;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-} */
-
-/* #img-rock {
-    width: 100%;
-    height: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: auto; 
-} */
 
 #button-rock, #button-paper, #button-scissors {
     flex: 1;
-    /* width: 30%; */
-    font-size: 120%;
+    font-size: 1.2rem;
     height: 100%;
     background-color: #E4CCFF;
     /* box-sizing: border-box; */
@@ -118,44 +91,33 @@ img {
 #body-game-1, #body-game-3 {
     flex: 1.7;
     height: 100%;
-    border: 3px solid #7D4AE3;
+    /* border: 3px solid #7D4AE3; */
     text-align: center;
-    font-size: 120%;
+}
+
+.result-img {
+    margin-top: -10px;
+}
+
+.tag {
+    font-size: 1.4rem;
+    margin-top: -10px;
 }
 
 #body-game-2 {
     flex: 1;
     height: 100%;
-    border: 3px solid #7D4AE3;
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
-    font-size: 170%;
-    /* display: flex;
-    font-size: 180%;
+    /* border: 3px solid #7D4AE3; */
+}
+
+#win {
+    height: 100%;
+    font-size: 1.5rem;
+    display: flex;
     text-align: center;
     align-items: center;
-    justify-content: center; */
+    justify-content: center;
 }
-
-/* #button-rock {
-    background-image: url("images/rock.png");
-    background-size: 100%;
-    background-repeat: no-repeat; 
-    
-}
-
-#button-paper {
-    background-image: url("images/paper.png");
-    background-size: 100%;
-    background-repeat: no-repeat; 
-}
-
-#button-scissors {
-    background-image: url("images/scissors.png");
-    background-size: 100%;
-    background-repeat: no-repeat; 
-} */
 
 #button-rock:hover, #button-paper:hover, #button-scissors:hover {
     background-color: #B7A8F0;
@@ -166,12 +128,11 @@ img {
     margin-top: -5%;
 }
 
-
 #body-score {
     width: 45%;
-    height: 15%;
-    font-size: 120%;
-    /* font-size: 1.2rem; */
+    height: 14%;
+    /* font-size: 120%; */
+    font-size: 1.2rem;
     background-color: #E4CCFF;
     border: 3px solid #7D4AE3;
     border-radius: 10px;
@@ -185,7 +146,7 @@ img {
 
 #body-interaction {
     width: 75%;
-    height: 17%;
+    height: 15%;
     margin: auto;
     box-sizing: border-box;
     display: flex;
@@ -201,9 +162,13 @@ button {
     border: none;
 }
 
+button:focus {
+    outline: none;
+}
+
 .buttons-res {
     display: flex;
-    font-size: 140%;
+    font-size: 1.3rem;
     background-color: #FFB8D8; 
     border: 3px solid #7D4AE3;
     border-radius: 10px;
@@ -223,16 +188,6 @@ button {
 #button-reset {
     flex:1.4;
 }
-
-/* #button-restart {
-    display: flex;
-    font-size: 140%;
-    background-color: #FFB8D8; 
-    border: 3px solid #7D4AE3;
-    border-radius: 10px;
-    align-items: center;
-    justify-content: center;
-}  */
 
 /* #button-restart:hover {
   background-color: #7D4AE3;

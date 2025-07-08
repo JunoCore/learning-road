@@ -8,6 +8,9 @@ const bodyGame3 = document.querySelector("#body-game-3");
 const playerChoiceImg = document.querySelector("#body-game-1-img");
 const compChoiceImg = document.querySelector("#body-game-3-img");
 
+// const vs = document.querySelector("#vs");
+const win = document.querySelector("#win");
+
 const playerScoreText = document.querySelector("#player-score");
 const compScoreText = document.querySelector("#comp-score");
 
@@ -24,6 +27,8 @@ const pool = [
     { number: 1, name: "PAPER", address: "images/paper.png"},
     { number: 2, name: "SCISSORS", address: "images/scissors-2.png"}
 ] 
+
+const winText = ["YOU WIN!!!", "YOU LOSE!", "IT'S A TIE!"];
 
 choice();
 rockButton.addEventListener('click', () => {
@@ -66,7 +71,7 @@ function results() {
     playerChoiceImg.src = playerChoice["address"];
     bodyGame2.style.display = "block";
     bodyGame3.style.display = "block";
-    restartButton.style.display = "block";
+    restartButton.style.display = "flex";
     compChoice = pool[Math.floor(Math.random() * 3)];
     compChoiceImg.src = compChoice["address"];
     winCondition(playerChoice["number"], compChoice["number"]);
@@ -75,9 +80,10 @@ function results() {
 }
 
 function winCondition(a, b) {
-    if ((a==0)&&(b==2)) { playerScore++; }
-    else if ((a==2)&&(b==0)) { compScore++; }
-    else if (a>b) { playerScore++; }
-    else if (a<b) { compScore++; }
+    if ((a==0)&&(b==2)) { playerScore++; win.innerText = winText[0]}
+    else if ((a==2)&&(b==0)) { compScore++; win.innerText = winText[1]}
+    else if (a>b) { playerScore++; win.innerText = winText[0]}
+    else if (a<b) { compScore++; win.innerText = winText[1]}
+    else { win.innerText = winText[2] }
 }
 
