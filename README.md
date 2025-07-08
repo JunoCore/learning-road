@@ -10,6 +10,7 @@ All projects, notes and links live here.
 | Project           | Demo                                                                                          | Source code                  |
 |-------------------|-----------------------------------------------------------------------------------------------|------------------------------|
 | Guess the Number  | [Play in browser](https://junocore.github.io/learning-road/js-games/guess-number/)            | [`js-games/guess-number`](js-games/guess-number) |
+| Rock, Paper, Scissors  | [Play in browser](https://junocore.github.io/learning-road/js-games/rock-paper-scissors/)            | [`js-games/rock-paper-scissors`](js-games/rock-paper-scissors) |
 
 ---
 
