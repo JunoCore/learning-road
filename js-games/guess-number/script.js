@@ -9,7 +9,7 @@ import { getAuth, signInAnonymously }
   from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyA2gZiuyXas3t21kGGmm-a7WM9pzgrkZbc",
+  apiKey: "AIzaSyAmMjvQrBRGcMn1xxNj4kiBEPAz37KT1w4",
   authDomain: "guess-number-web.firebaseapp.com",
   projectId: "guess-number-web",
   storageBucket: "guess-number-web.firebasestorage.app",
