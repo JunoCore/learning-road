@@ -23,6 +23,38 @@ const auth = getAuth(app);
 
 // await signInAnonymously(auth);
 
+window.dumpScoresToCSV = async () => {
+  const snap = await getDocs(collection(db, 'scores'));
+  const rows = snap.docs.map(d => {
+    const { player, attempts, createdAt } = d.data();
+    return {
+      id: d.id,
+      player,
+      attempts,
+      createdAt: createdAt.toDate().toISOString()
+    };
+  });
+  const header = ['id','player','attempts','createdAt'];
+  const csv = [
+    header.join(','),
+    ...rows.map(r =>
+      header.map(f => JSON.stringify(r[f]||'')).join(',')
+    )
+  ].join('\r\n');
+
+  const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+  const url  = URL.createObjectURL(blob);
+  const a    = document.createElement('a');
+  a.href     = url;
+  a.download = 'scores.csv';
+  document.body.append(a);
+  a.click();
+  a.remove();
+  URL.revokeObjectURL(url);
+
+  console.log('✅ scores.csv готов к загрузке');
+};
+
 async function saveScore(name, tries) {
     await addDoc(collection(db, "scores"), {
     player: name,
