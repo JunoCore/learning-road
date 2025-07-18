@@ -8,8 +8,8 @@
 - [x] Colored Markers — CSS Colors
 - [x] Registration Form — HTML Forms
 - [x] **Build a Survey Form** (cert checkpoint)
-- [ ] Rothko Painting — CSS Box Model ![progress](https://img.shields.io/badge/Progress-0%25-brightgreen)
-- [ ] Flexbox Photo Gallery — Flexbox
+- [x] Rothko Painting — CSS Box Model
+- [ ] Flexbox Photo Gallery — Flexbox ![progress](https://img.shields.io/badge/Progress-0%25-brightgreen)
 - [ ] Nutrition Label — Typography
 - [ ] Accessibility Quiz — Landmarks & ARIA
 - [ ] **Build a Tribute Page** (cert checkpoint)
