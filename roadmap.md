@@ -51,10 +51,14 @@
 - [ ] Forum Leaderboard — Async / await
 - [ ] **Project: Pokémon Search App** (final certification showcase)
 
-### 3. Personal Mini-Projects
+### 3. Data Analysis with Python
+![progress](https://img.shields.io/badge/Progress-11%25-brightgreen)
+
+### 4. Personal Mini-Projects
 - [x] Build “Guess the Number” (HTML / CSS / JS)
 - [x] Record scores to Firebase (Firestore)
-- [ ] Export CSV + first Jupyter graph
+- [x] Build “Rock, Paper, Scissors” (HTML / CSS / JS)
+- [x] Export CSV + first Jupyter graph
 - [ ] Train first ML model (logistic regression)
 - [ ] Deploy FastAPI + Docker (public URL)
 
