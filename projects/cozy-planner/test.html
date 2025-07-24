@@ -1,0 +1,137 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cozy Planner</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <script type="module" src="./script.js"></script>
+    </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Plan</title><style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Arial, sans-serif; color: #333; padding: 20px; background: #fafafa; }
+    .container { display: grid; grid-template-columns: 2fr 1fr; gap: 20px; }
+    .clocks { display: flex; justify-content: space-between; margin-bottom: 20px; }
+    .clock { width: 45%; }
+    .clock h2 { text-align: center; margin-bottom: 10px; font-size: 1.2em; }
+    svg { width: 100%; height: auto; }
+    /* Timeline grid */
+    .timeline { border-collapse: collapse; width: 100%; margin-bottom: 20px; }
+    .timeline th, .timeline td { border: 1px solid #ddd; padding: 5px; text-align: center; }
+    .timeline th { background: #f0f0f0; }
+    .timeline .task { height: 30px; }
+    /* Sidebar panels */
+    .sidebar > div { background: #fff; padding: 15px; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 1px 4px rgba(0,0,0,0.1); }
+    .sidebar h3 { margin-bottom: 10px; font-size: 1.1em; }
+    .checkbox-list { list-style: none; }
+    .checkbox-list li { margin-bottom: 8px; }
+    .checkbox-list input { margin-right: 8px; }
+    .water-tracker { display: flex; align-items: center; }
+    .water-tracker .drops { margin-left: 10px; display: flex; }
+    .water-tracker .drop { width: 20px; height: 30px; border: 1px solid #00aaff; border-radius: 4px; margin-right: 5px; position: relative; }
+    .water-tracker .drop.filled::after {
+      content: '';
+      position: absolute; bottom: 0; left: 0; right: 0;
+      height: 60%; background: #00aaff; border-bottom-left-radius: 4px; border-bottom-right-radius: 4px;
+    }
+    .notes textarea { width: 100%; height: 100px; border: 1px solid #ddd; padding: 8px; border-radius: 4px; resize: none; }
+  </style>
+</head>
+<body>
+  <h1>Daily Plan</h1>
+  <div class="container">
+    <div>
+      <div class="clocks">
+        <!-- AM Clock -->
+        <div class="clock">
+          <h2>AM</h2>
+          <svg viewBox="0 0 200 200">
+            <circle cx="100" cy="100" r="90" fill="#f9f9f9" stroke="#ddd" stroke-width="4"/>
+            <!-- Example arcs: use path elements for segments -->
+            <path d="M100,10 A90,90 0 0,1 177.95,50" fill="none" stroke="#ffcc00" stroke-width="12"/>
+            <path d="M177.95,50 A90,90 0 0,1 153.38,137.05" fill="none" stroke="#ff6666" stroke-width="12"/>
+            <!-- center label -->
+            <text x="100" y="110" text-anchor="middle" font-size="20" fill="#666">AM</text>
+          </svg>
+        </div>
+        <!-- PM Clock -->
+        <div class="clock">
+          <h2>PM</h2>
+          <svg viewBox="0 0 200 200">
+            <circle cx="100" cy="100" r="90" fill="#f9f9f9" stroke="#ddd" stroke-width="4"/>
+            <path d="M100,10 A90,90 0 0,1 50,20" fill="none" stroke="#66ccff" stroke-width="12"/>
+            <path d="M50,20 A90,90 0 0,1 20,100" fill="none" stroke="#ff9999" stroke-width="12"/>
+            <text x="100" y="110" text-anchor="middle" font-size="20" fill="#666">PM</text>
+          </svg>
+        </div>
+      </div>
+      <!-- Timeline table -->
+      <table class="timeline">
+        <thead>
+          <tr><th>Hour</th><th>Task</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>6</td><td class="task">Hydrate/Wake Up</td></tr>
+          <tr><td>7</td><td class="task">Morning Reading</td></tr>
+          <tr><td>8</td><td class="task">Web Page Designing</td></tr>
+          <tr><td>9</td><td class="task">Jog / German</td></tr>
+          <tr><td>10</td><td class="task">Design Template</td></tr>
+          <tr><td>11</td><td class="task">Publish Design Layout</td></tr>
+          <tr><td>12</td><td class="task">Lunch</td></tr>
+          <tr><td>13</td><td class="task">Tea Time</td></tr>
+          <tr><td>14</td><td class="task">Design Template Cont.</td></tr>
+          <tr><td>15</td><td class="task">Break</td></tr>
+          <tr><td>16</td><td class="task">Leisure Reading</td></tr>
+          <tr><td>17</td><td class="task">Dinner</td></tr>
+          <tr><td>18</td><td class="task">Walk</td></tr>
+          <tr><td>19</td><td class="task">Shower</td></tr>
+          <tr><td>20</td><td class="task">Sleep</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div class="priorities">
+        <h3>Priorities</h3>
+        <ul class="checkbox-list">
+          <li><input type="checkbox" checked>Design Layout Due Today</li>
+          <li><input type="checkbox" checked>Meeting with Greg</li>
+          <li><input type="checkbox">German Lesson</li>
+          <li><input type="checkbox">Study for Real Estate License Test</li>
+        </ul>
+      </div>
+      <div class="todo">
+        <h3>To Do List</h3>
+        <ul class="checkbox-list">
+          <li><input type="checkbox">Design Template Project</li>
+          <li><input type="checkbox">Translate Documents</li>
+          <li><input type="checkbox" checked>Study</li>
+        </ul>
+      </div>
+      <div class="water-tracker">
+        <h3>Water</h3>
+        <div class="drops">
+          <div class="drop filled"></div>
+          <div class="drop filled"></div>
+          <div class="drop filled"></div>
+          <div class="drop"></div>
+          <div class="drop"></div>
+        </div>
+      </div>
+      <div class="notes">
+        <h3>Notes</h3>
+        <textarea placeholder="I focus best in the mornings...\nI need to eat healthier!"></textarea>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
