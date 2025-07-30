@@ -1,8 +1,10 @@
-## Roadmap
+# Full‑Stack Developer Roadmap
 
+## 1. Preparation
 - [x] Install VS Code, Git, Node, Python, Jupyter
 
-### 1. Responsive Web Design (freeCodeCamp 2022 curriculum)
+## 2. HTML/CSS
+### Responsive Web Design (freeCodeCamp 2022 curriculum)
 - [x] Cat Photo App — Basic HTML
 - [x] Café Menu — Basic CSS
 - [x] Colored Markers — CSS Colors
@@ -24,8 +26,9 @@
 - [ ] Penguin — CSS transforms
 - [ ] **Build a Personal Portfolio Webpage** (cert checkpoint)
 
-### 2. JavaScript Algorithms & Data Structures (v8)
-- [x] Pyromid Generator — Introductory JS
+## 3. Vanilla JS
+### JavaScript Algorithms & Data Structures (v8)
+- [x] Pyramid Generator — Introductory JS
 - [x] Gradebook App — review JS fundamentals
 - [x] Role-Playing Game — Basic JS
 - [x] Random Background Color Changer — Debugging
@@ -51,14 +54,27 @@
 - [ ] Forum Leaderboard — Async / await
 - [ ] **Project: Pokémon Search App** (final certification showcase)
 
-### 3. Data Analysis with Python
+## 4. Full‑Stack via “Cozy Planner” App
+### 4.1 Interactivity & npm  
+### 4.2 React + Tailwind CSS  
+### 4.3 Frontend Applications  
+### 4.4 CLI Apps & Node.js  
+### 4.5 PostgreSQL & CRUD Operations  
+### 4.6 JWT Authentication & RESTful API  
+### 4.7 Complete App + Redis  
+### 4.8 DevOps Basics: Linux & AWS  
+### 4.9 CI/CD, IaC & Automation  
+### 4.10 Monitoring & Infrastructure
+
+## 5. Data Analysis with Python
 ![progress](https://img.shields.io/badge/Progress-11%25-brightgreen)
 
-### 4. Personal Mini-Projects
+## Personal Projects
 - [x] Build “Guess the Number” (HTML / CSS / JS)
 - [x] Record scores to Firebase (Firestore)
 - [x] Build “Rock, Paper, Scissors” (HTML / CSS / JS)
 - [x] Export CSV + first Jupyter graph
+- [ ] Create “Cozy Planner” App 
 - [ ] Train first ML model (logistic regression)
 - [ ] Deploy FastAPI + Docker (public URL)
 
