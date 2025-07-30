@@ -17,3 +17,4 @@ _A daily chronicle of my caffeine-fueled skirmishes with code and the pursuit of
 - **2025-07-22**: Planned the next learning steps + performed data analysis on work data in JupyterLab
 - **2025-07-24**: Started developing my first app, "Cozy Planner". I’m currently in the planning stage
 - **2025-07-28**: Set up my LinkedIn page
+- **2025-07-30**: Updated roadmap.md for full‑stack mode
