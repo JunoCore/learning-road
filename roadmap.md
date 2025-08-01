@@ -55,7 +55,13 @@
 - [ ] **Project: Pokémon Search App** (final certification showcase)
 
 ## 4. Full‑Stack via “Cozy Planner” App
-### 4.1 Interactivity & npm  
+### 4.1 Interactivity & npm 
+- [ ] **Project: Cozy Planner CLI**
+- [x] Understand npm & package.json
+- [ ] Initialize project  
+- [ ] Manage packages with npm   
+- [ ] Configure GitHub-flow  
+- [ ] Implement add/list/remove commands
 ### 4.2 React + Tailwind CSS  
 ### 4.3 Frontend Applications  
 ### 4.4 CLI Apps & Node.js  
