@@ -58,7 +58,7 @@
 ### 4.1 Interactivity & npm 
 - [ ] **Project: Cozy Planner CLI**
 - [x] Understand npm & package.json
-- [ ] Initialize project  
+- [x] Initialize project  
 - [ ] Manage packages with npm   
 - [ ] Configure GitHub-flow  
 - [ ] Implement add/list/remove commands

@@ -19,3 +19,4 @@ _A daily chronicle of my caffeine-fueled skirmishes with code and the pursuit of
 - **2025-07-28**: Set up my LinkedIn page.
 - **2025-07-30**: Updated roadmap.md for full‑stack mode.
 - **2025-07-31**: Learned about npm and package.json.
+- **2025-08-1**: Started the Cozy Planner CLI.
