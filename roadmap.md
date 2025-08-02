@@ -33,7 +33,7 @@
 - [x] Role-Playing Game — Basic JS
 - [x] Random Background Color Changer — Debugging
 - [ ] Calorie Counter — Form Validation ![progress](https://img.shields.io/badge/Progress-44%25-brightgreen)
-- [ ] Rock, Paper, Scissors Game
+- [x] Rock, Paper, Scissors Game
 - [ ] Music Player — String & Array Methods
 - [ ] **Project: Palindrome Checker** (cert checkpoint)
 - [ ] Date Formatter — Date Object
