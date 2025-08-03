@@ -59,8 +59,8 @@
 - [ ] **Project: Cozy Planner CLI**
 - [x] Understand npm & package.json
 - [x] Initialize project  
-- [ ] Manage packages with npm   
-- [ ] Configure GitHub-flow  
+- [x] Manage packages with npm   
+- [x] Configure GitHub-flow  
 - [ ] Implement add/list/remove commands
 ### 4.2 React + Tailwind CSS  
 ### 4.3 Frontend Applications  
