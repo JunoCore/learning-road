@@ -62,7 +62,13 @@
 - [x] Manage packages with npm   
 - [x] Configure GitHub-flow  
 - [x] Implement add/list/remove commands
-### 4.2 React + Tailwind CSS  
+### 4.2 React + Tailwind CSS
+- [ ] **Project: Cozy Planner UI**
+- [ ] Understand React fundamentals & JSX
+- [ ] Scaffold React app with Vite and configure Tailwind CSS
+- [ ] Build core features: components, state management, add & toggle tasks
+- [ ] Style UI with Tailwind and implement responsive design
+- [ ] Configure code quality (ESLint, Prettier), open PR & release v0
 ### 4.3 Frontend Applications  
 ### 4.4 CLI Apps & Node.js  
 ### 4.5 PostgreSQL & CRUD Operations  
