@@ -61,7 +61,7 @@
 - [x] Initialize project  
 - [x] Manage packages with npm   
 - [x] Configure GitHub-flow  
-- [ ] Implement add/list/remove commands
+- [x] Implement add/list/remove commands
 ### 4.2 React + Tailwind CSS  
 ### 4.3 Frontend Applications  
 ### 4.4 CLI Apps & Node.js  

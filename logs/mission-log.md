@@ -20,3 +20,5 @@ _A daily chronicle of my caffeine-fueled skirmishes with code and the pursuit of
 - **2025-07-30**: Updated roadmap.md for full‑stack mode.
 - **2025-07-31**: Learned about npm and package.json.
 - **2025-08-1**: Started the Cozy Planner CLI.
+- **2025-08-3**: Implemented add, list and remove commands in the Cozy Planner CLI.
+- **2025-08-4**: Finished the Cozy Planner CLI.
