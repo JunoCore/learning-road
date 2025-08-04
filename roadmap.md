@@ -56,7 +56,7 @@
 
 ## 4. Full‑Stack via “Cozy Planner” App
 ### 4.1 Interactivity & npm 
-- [ ] **Project: Cozy Planner CLI**
+- [x] **Project: Cozy Planner CLI**
 - [x] Understand npm & package.json
 - [x] Initialize project  
 - [x] Manage packages with npm   
