@@ -34,7 +34,7 @@
 - [x] Random Background Color Changer — Debugging
 - [ ] Calorie Counter — Form Validation ![progress](https://img.shields.io/badge/Progress-44%25-brightgreen)
 - [x] Rock, Paper, Scissors Game
-- [ ] Music Player — String & Array Methods ![progress](https://img.shields.io/badge/Progress-20%25-brightgreen)
+- [ ] Music Player — String & Array Methods ![progress](https://img.shields.io/badge/Progress-46%25-brightgreen)
 - [ ] **Project: Palindrome Checker** (cert checkpoint)
 - [ ] Date Formatter — Date Object
 - [ ] Football Team Cards — Modern JS (map, filter, spread)
