@@ -22,3 +22,4 @@ _A daily chronicle of my caffeine-fueled skirmishes with code and the pursuit of
 - **2025-08-1**: Started the Cozy Planner CLI.
 - **2025-08-3**: Implemented add, list and remove commands in the Cozy Planner CLI.
 - **2025-08-4**: Finished the Cozy Planner CLI.
+- **2025-08-8**: Went through creating the Cozy Planner UI in React.
