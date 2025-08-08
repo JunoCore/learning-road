@@ -64,8 +64,8 @@
 - [x] Implement add/list/remove commands
 ### 4.2 React + Tailwind CSS
 - [ ] **Project: Cozy Planner UI**
-- [ ] Understand React fundamentals & JSX
-- [ ] Scaffold React app with Vite and configure Tailwind CSS
+- [x] Understand React fundamentals & JSX
+- [x] Scaffold React app with Vite and configure Tailwind CSS
 - [ ] Build core features: components, state management, add & toggle tasks
 - [ ] Style UI with Tailwind and implement responsive design
 - [ ] Configure code quality (ESLint, Prettier), open PR & release v0
