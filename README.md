@@ -1,7 +1,6 @@
 # Learning Road 🚀
 
-My journey from “tiny browser games” to Data / ML engineering.  
-All projects, notes and links live here.
+My journey from **tiny browser games** → to **full-stack development**
 
 ---
 
